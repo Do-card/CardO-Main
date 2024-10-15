@@ -1,16 +1,27 @@
 -------
  <div align="center">
 
- ## [FE]
+<div align="left">
+<h1> FE </h1>
+ </div>
+
 
  -------
- ## [BE]
+<div align="left">
+<h1> BE </h1>
+ </div>
+
 
  -------
- ## [INFRA]
+<div align="left">
+<h1> INFRA </h1>
+ </div>
+
 
  -------
- ## [그외]
+<div align="left">
+<h1> 그외 </h1>
+ </div>
 
 
  -------
