@@ -1,82 +1,87 @@
--------
- <div align="center">
 
-<div align="left">
-<h1> FE </h1>
- </div>
+# Card-O! README
 
+## 프로젝트 개요
+Card-O!는 위치 기반 카드 혜택 및 To-Do 관리를 통합한 서비스입니다. 사용자는 자신의 위치에서 최적화된 카드 혜택과 해야 할 일을 지도와 푸시 알림을 통해 확인할 수 있으며, 개인 소비 패턴에 맞춘 상품과 카드 추천 기능을 제공합니다.
 
- -------
-<div align="left">
-<h1> BE </h1>
- </div>
+---
 
+## 주요 기능
+### 1. 위치 기반 카드 혜택 및 To-Do 알림
+- 현재 위치를 기반으로 최적의 카드 혜택 및 할 일(To-Do)을 노출.
+- 사용자가 설정한 위치에 도달하면 Push 알림 제공.
 
- -------
-<div align="left">
-<h1> INFRA </h1>
- </div>
+### 2. 소비 패턴 기반 상품 및 카드 추천
+- AI와 데이터 분석을 통해 소비 패턴을 학습하여 맞춤형 상품 및 카드 추천.
+- 사용자의 구매 패턴을 클러스터링하여 유사 사용자 기반 추천 제공.
 
+### 3. 통합된 To-Do 관리 및 지도 기반 시각화
+- 지도에서 현재 위치와 주변 To-Do를 한눈에 확인.
+- 카테고리별로 To-Do와 관련된 카드 혜택 정보 표시.
 
- -------
-<div align="left">
-<h1> 그외 </h1>
- </div>
+---
 
+## 기술 스택
+### Backend
+- **Spring Boot**
+- **MySQL** (데이터 관리)
+- **Elasticsearch + Logstash + Kibana** (ELK 스택: 로그 수집, 데이터 분석, 시각화)
+- **Docker** (CI/CD 및 배포 환경)
+- **Redis** (캐싱 구현)
+- **FCM** (푸시 알림 서비스)
+- **TensorFlow** (AI 딥러닝 모델 구축)
 
- -------
- ## 팀 구성원
+### Frontend
+- **React.js** (UI 구현)
+- **React Query** (API 요청 최적화)
+- **TMap API** (지도 서비스 통합)
+- **FCM** (푸시 알림 UI 연결)
 
- </div>
+### DevOps
+- **Nginx** (Blue-Green 배포 환경 설정)
+- **Prometheus & Grafana** (모니터링)
 
-  | | | | | | |
-  |---|---|---|---|---|---|
-  |이동열|고다현|박상욱|박진우|정한수|지수영|
-  | | | | | | |
+---
 
+## 주요 기술 설명
+### ELK 스택 활용
+- RDB 데이터를 1분 단위로 수집, 로그 가공 및 분석.
+- 소비 키워드 집계 및 사용자 군집화를 통해 맞춤형 상품 추천.
 
+### AI 분류 모델
+- 한국어 형태소 분석기와 Word2Vec을 활용한 카테고리 분류.
+- 95% 정확도를 보이는 딥러닝 기반 분류 모델 구축.
 
-  <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> 
-  <img src="https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
-  <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
-  <br>
-  
-  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
-  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
-  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
-  <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
-  <br>
-  
-  <img src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"> 
-  <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> 
-  <img src="https://img.shields.io/badge/mariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white"> 
-  <img src="https://img.shields.io/badge/mongoDB-47A248?style=for-the-badge&logo=MongoDB&logoColor=white">
-  <img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white">
-  <br>
-  
-  <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> 
-  <img src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"> 
-  <img src="https://img.shields.io/badge/angular.js-DD0031?style=for-the-badge&logo=angularjs&logoColor=white">
-  <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white">
-  <br>
-  
-  <img src="https://img.shields.io/badge/spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"> 
-  <img src="https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white">
-  <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white">
-  <img src="https://img.shields.io/badge/flask-000000?style=for-the-badge&logo=flask&logoColor=white">
-  <img src="https://img.shields.io/badge/flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white">
-  
-  <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
-  <br>
+### Blue-Green 배포
+- Nginx와 Spring Boot를 활용하여 Blue-Green 배포 환경 구현.
+- 배포 중단 없이 서비스 업데이트 가능.
 
-  <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"> 
-  <img src="https://img.shields.io/badge/amazonaws-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"> 
-  <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=white">
-  <br>
-  
-  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-  <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
-  <img src="https://img.shields.io/badge/fontawesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white">
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white">
-  <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=Spring Boot&logoColor=yellow">
+### 푸시 알림
+- FCM(Firebase Cloud Messaging)을 이용해 실시간 To-Do 알림 전송.
 
+---
+
+## 팀 구성 및 역할
+- **이동열**: 백엔드 개발 (데이터 로그 분석, 트렌드 분석)
+- **박상욱**: 백엔드 및 인프라 (금융 및 To-Do API, 인프라 관리, JWT 인증 API)
+- **고다현**: ELK 스택 및 데이터 분석 (로그 시각화, 추천 알고리즘)
+- **정한수**: 백엔드 및 프론트엔드 (react-native, FCM 구현)
+- **박진우**: 백엔드 개발 (카테고리 분류 AI 학습, 테스트)
+- **지수영**: 프론트엔드 및 디자인 (PWA 환경 구축, UI/UX)
+
+---
+
+## 설치 및 실행 방법
+1. **Backend**
+   - Spring Boot 프로젝트 빌드 및 실행.
+   - MySQL 및 Redis 설정.
+   - Docker로 Elasticsearch, Logstash, Kibana 컨테이너 실행.
+
+2. **Frontend**
+   - React.js 프로젝트 설치: `npm install`
+   - 개발 서버 실행: `npm start`
+
+3. **푸시 알림**
+   - FCM 설정 및 API Key 추가.
+
+---
